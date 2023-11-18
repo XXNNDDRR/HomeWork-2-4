@@ -21,6 +21,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Kpd-e3-gbx" secondAttribute="height" multiplier="1:1" id="WOy-PU-vdo"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="DJQ-mG-wcc">
                                 <rect key="frame" x="16" y="657" width="120" height="141"/>
@@ -76,8 +81,8 @@
                                     <constraint firstAttribute="width" constant="120" id="7LO-ex-EbB"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZaG-Ns-Hli">
-                                <rect key="frame" x="146" y="648" width="231" height="150"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZaG-Ns-Hli">
+                                <rect key="frame" x="146" y="652" width="231" height="146"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TTQ-Ak-ISN">
                                         <rect key="frame" x="-2" y="0.0" width="235" height="31"/>
@@ -87,14 +92,14 @@
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bwO-e5-kpC">
-                                        <rect key="frame" x="-2" y="60" width="235" height="31"/>
+                                        <rect key="frame" x="-2" y="58" width="235" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <connections>
                                             <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="gT5-na-5tZ"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VvM-PG-8NK">
-                                        <rect key="frame" x="-2" y="120" width="235" height="31"/>
+                                        <rect key="frame" x="-2" y="116" width="235" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                         <connections>
                                             <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="nl8-pr-SYC"/>

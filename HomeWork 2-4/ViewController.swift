@@ -22,7 +22,6 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        colorView.layer.cornerRadius = 20
         updateColor()
     }
     
@@ -39,13 +38,16 @@ final class ViewController: UIViewController {
     }
     
     private func updateColor() {
+        colorlabelValues()
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
             alpha: 1.0
         )
-        
+    }
+    
+    fileprivate func colorlabelValues() {
         redLabel.text = String(format: "%.2f", CGFloat(redSlider.value))
         greenLabel.text = String(format: "%.2f", CGFloat(greenSlider.value))
         blueLabel.text = String(format: "%.2f", CGFloat(blueSlider.value))
